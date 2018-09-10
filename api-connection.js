@@ -26,9 +26,9 @@ var api_connection = {
 				}
 			});
 	},
-	initialize: function() {	
+	initialize: function(_baseURL) {	
 		this.datAxios = axios.create({
-		  baseURL: 'https://polar-chamber-20771.herokuapp.com/notes'
+		  baseURL: _baseURL
 		});
 	}
 };
