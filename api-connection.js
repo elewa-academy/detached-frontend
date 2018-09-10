@@ -12,11 +12,9 @@ var api_connection = {
 				}
 			});
 	},
-	post: function(path, _note) {
+	post: function(path, _data) {
 		path = path.join("/");
-		this.datAxios.post(path, {
-				note: _note
-			}) 
+		this.datAxios.post(path, data) 
 			.then((response) => {
 				console.log(response.data);
 			})
