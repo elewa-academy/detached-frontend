@@ -14,7 +14,7 @@ var api_connection = {
 	},
 	post: function(path, _data) {
 		path = path.join("/");
-		this.datAxios.post(path, data) 
+		this.datAxios.post(path, _data) 
 			.then((response) => {
 				console.log(response.data);
 			})
